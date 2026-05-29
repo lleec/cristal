@@ -220,7 +220,7 @@ Novo índice no banco:
 1. Orkami (Deus Orca) 🌊
    ├─ Raridade: SECRETO
    ├─ Chance: 0.1% (1 em 1.000)
-   ├─ Stats: +30% em TUDO (CS, XP, Drops)
+   ├─ Stats: +20% em TUDO (CS, XP, Drops)
    ├─ Visual: Descrição no perfil "Orkami ✨"
    ├─ Equipável: NÃO
    └─ Vender: NÃO (locked)
@@ -228,15 +228,15 @@ Novo índice no banco:
 2. Ume (Deusa Arraia) 💜
    ├─ Raridade: SECRETO
    ├─ Chance: 0.1% (1 em 1.000)
-   ├─ Stats: +30% em TUDO (CS, XP, Drops)
+   ├─ Stats: +20% em TUDO (CS, XP, Drops)
    ├─ Visual: Descrição no perfil "Ume ✨"
    ├─ Equipável: NÃO
    └─ Vender: NÃO (locked)
 
-3. Carlinhos (Deus do Caos) 🎭
+3. Carlinhos (Deus Cavalo) 🎭
    ├─ Raridade: SECRETO
    ├─ Chance: 0.1% (1 em 1.000)
-   ├─ Stats: +30% em TUDO (CS, XP, Drops)
+   ├─ Stats: +20% em TUDO (CS, XP, Drops)
    ├─ Visual: Descrição no perfil "Carlinhos ✨"
    ├─ Equipável: NÃO
    └─ Vender: NÃO (locked)
@@ -332,39 +332,39 @@ Novo recurso: P�� DE ENCANTO
 ```
 OFENSIVOS PVE:
 ├─ Infernal 🔥
-│  └─ +25% ganho CS
+│  └─ +15% dano
 │
 ├─ Elétrico ⚡
-│  └─ +25% XP ganho
+│  └─ +10% dano
 │
 └─ Primal 🦅
-   └─ +20% drops raros
+   └─ +5% dano
 
 FARMING SPECIALIST:
 ├─ Saqueador 💰
-│  └─ +30% CS (para farming)
+│  └─ +15% CS (para farming)
 │
 ├─ Colhedor 🌾
-│  └─ +25% drops
+│  └─ +10% cs
 │
 └─ Mineiro ⛰️
-   └─ +15% em tudo (balanced)
+   └─ +5% cs
 
 ESPECIAIS:
 ├─ Sábio 📚
-│  └─ +30% XP
+│  └─ +10% XP
 │
 ├─ Noturno 🌙
-│  └─ +20% CS entre 00:00-06:00 UTC
+│  └─ +10% CS entre 00:00-06:00 UTC
 │
 ├─ Diurno ☀️
-│  └─ +20% CS entre 12:00-18:00 UTC
+│  └─ +10% CS entre 12:00-18:00 UTC
 │
 ├─ Sorte 🍀
-│  └─ +15% chance drops raros
+│  └─ +5% chance drops raros
 │
 └─ Espectral 👻
-   └─ +10% em tudo (chill/básico)
+   └─ +5% em tudo dano/xp/cs
 ```
 
 **Obtenção de Pó:**
@@ -402,25 +402,15 @@ Total possível por dia: ~12 pó (consistente)
 ├─ Descrição, custo, efeito
 
 /enchant info Infernal
-├─ "Infernal 🔥: +25% ganho CS"
-├─ "Custo: 100 pó"
+├─ "Infernal 🔥: +15% dano"
+├─ "Raridade: Lendario"
 ├─ "Categoria: Ofensivo"
 └─ "Remoção: 50 CS + 50 pó"
+
+só vale um encantamento por pet, caso ele encante novamente o bot avisa que ira remover o encatamento atual
+reagir para confirmar
+
 ```
-
-**Stacking:**
-
-```
-Múltiplos pets com MESMO encantamento:
-├─ 3x Saqueador = +90% CS total (3x30%)
-├─ Sistema soma automaticamente
-└─ Max: 3 pets equipados
-
-Se tem 2 pets Saqueador + 1 Sábio:
-├─ +30% CS (pet 1)
-├─ +30% CS (pet 2)
-├─ +30% XP (pet 3)
-└─ Tudo aplica automaticamente
 ```
 
 **Implementação:**
